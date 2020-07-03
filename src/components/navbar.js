@@ -12,10 +12,10 @@ export const Navbar = () => {
 
     const handleToggle = ()=>{
         setnav({
-            isOpen : !nav
+            isOpen : !nav.isOpen
         })
     }
-    return (
+    return (//if u have way more links it s wiser to make em all into an array then rendering em
         <nav className="navbar">   
             <div className="nav-center">
                 <div className="nav-header">

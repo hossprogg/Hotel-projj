@@ -1,9 +1,13 @@
 import React from 'react'
-
-export const Error = () => {
-    return (
-        <div>
-            
-        </div>
-    )
+import { Hero } from '../components/Hero'
+import {Banner} from '../components/Banner'
+import {Link} from 'react-router-dom'
+export const Error = () => {//look at hero how it should stil there
+    return <Hero>
+        <Banner title="404" subtitle="Not Found" >
+            <Link to="/" className="btn-primary">
+                Return Home
+            </Link> 
+        </Banner>
+    </Hero> 
 }

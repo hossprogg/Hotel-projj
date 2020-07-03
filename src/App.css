@@ -68,7 +68,7 @@ h6 {
 .btn-primary:hover {
   background: transparent;
   color: var(--primaryColor);
-}
+}/* amazing button styling and technics */
 .loading {
   text-transform: capitalize;
   text-align: center;
@@ -112,8 +112,8 @@ h6 {
   color: var(--primaryColor);
 }
 .nav-links {
-   height: 0;
-  overflow: hidden; 
+  height: 0;
+  overflow: hidden;
   transition: var(--mainTransition);
   list-style-type: none;
 }
@@ -155,29 +155,29 @@ h6 {
   }
 }
 /* end of navbar */
-/* Hero */
 .defaultHero,
-.roomsHero {
+.roomsHero {/* Here we make both of em the same  */
   min-height: calc(100vh - 66px);
   background: url("./images/defaultBcg.jpeg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.roomsHero {
+.roomsHero {/* Here we only override the ones that we want */
+
   background-image: url("./images/room-2.jpeg");
   min-height: 60vh;
 }
 /* End of Hero */
 /* Banner */
 .banner {
-  display: inline-block;
+  display: inline-block; 
   background: rgba(0, 0, 0, 0.5);
   color: var(--mainWhite);
   padding: 2rem 1rem;
   text-align: center;
   text-transform: capitalize;
-  letter-spacing: var(--mainSpacing);
+  letter-spacing: var(--mainSpacing);/* nice way of spacing a */
 }
 .banner h1 {
   font-size: 2.5rem;
@@ -192,6 +192,7 @@ h6 {
   font-size: 1.2rem;
   margin-bottom: 2rem;
 }
+
 @media screen and (min-width: 576px) {
   .banner {
     padding: 2rem 3rem;
